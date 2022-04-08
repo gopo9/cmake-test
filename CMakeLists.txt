@@ -29,6 +29,7 @@ target_link_libraries(GuiApp
     PRIVATE
         GuiAppData
         juce::juce_gui_extra
+        mymod::my_module
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags

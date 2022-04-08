@@ -1,4 +1,5 @@
 #include "MainComponent.h"
+#include "BinaryData.h"
 
 //==============================================================================
 MainComponent::MainComponent()
@@ -7,7 +8,6 @@ MainComponent::MainComponent()
 {
     addAndMakeVisible(testGui);
 
-    //get access to binary data ?!?
     std::unique_ptr<juce::Drawable> drawable(juce::Drawable::createFromImageData(
         BinaryData::drawing_svg, BinaryData::drawing_svgSize));
     button.setImages(drawable.get());
